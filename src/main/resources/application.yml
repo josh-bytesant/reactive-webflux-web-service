@@ -1,0 +1,20 @@
+spring:
+  r2dbc:
+    # Use 'mssql' as the driver identifier
+    url: r2dbc:sqlserver://SVRDCSQL06.sevenup.org:1433/DataMart
+    username: JoshuaApps
+    password: Joshua#123
+    pool:
+      # Reactive connection pooling settings
+      enabled: true
+      initial-size: 10
+      max-size: 20
+      max-idle-time: 30m
+
+  # Optional: Logging SQL for debugging performance
+  logging:
+    level:
+      org.springframework.r2dbc.core: DEBUG
+      io.r2dbc.spi: DEBUG
+      io.r2dbc.mssql: DEBUG
+      org.springframework.transaction.interceptor: TRACE
