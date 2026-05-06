@@ -1,9 +1,9 @@
 spring:
   r2dbc:
     # Use 'mssql' as the driver identifier
-    url: r2dbc:sqlserver://SVRDCSQL06.sevenup.org:1433/DataMart
-    username: JoshuaApps
-    password: Joshua#123
+    url: r2dbc:sqlserver://DataMart
+    username: 
+    password: 
     pool:
       # Reactive connection pooling settings
       enabled: true
